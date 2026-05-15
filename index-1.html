@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gyllenkaal — Web Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar" role="banner">
+    <a href="#hero" class="nav-logo" aria-label="Home">GY<span class="dot">.</span></a>
+    <nav role="navigation" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Freelance Web Designer &amp; UI/UX Enthusiast</p>
+      <h1 class="hero-name reveal">Gyllen<br /><span class="name-accent">kaal</span></h1>
+      <p class="hero-tagline reveal">
+        Siap membantu kamu membuat website <em>profesional</em>, modern,<br class="br-lg" />
+        dan sesuai kebutuhan brand kamu.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">Lihat Karya</a>
+        <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="scroll-hint reveal" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about" aria-label="About Me">
+    <div class="container">
+      <div class="section-label reveal">// 01 — About</div>
+      <div class="about-grid">
+        <div class="about-portrait reveal">
+          <div class="portrait-frame">
+            <img src="foto.jpg" alt="Foto Gyllenkaal" />
+          </div>
+          <div class="stat-chips">
+            <div class="chip reveal"><span class="chip-num">3+</span><span class="chip-label">Tahun Exp.</span></div>
+            <div class="chip reveal"><span class="chip-num">20+</span><span class="chip-label">Project</span></div>
+            <div class="chip reveal"><span class="chip-num">10+</span><span class="chip-label">Klien</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-heading reveal">Desain yang<br /><span class="gradient-text">berkesan & fungsional.</span></h2>
+          <p class="body-text reveal">
+            Saya adalah seorang Freelance Web Designer yang berfokus pada pembuatan tampilan website yang modern, profesional, dan sesuai dengan identitas brand klien.
+          </p>
+          <p class="body-text reveal">
+            Dengan pendekatan UI/UX yang terstruktur, saya memastikan setiap elemen desain tidak hanya indah secara visual — tapi juga nyaman digunakan oleh pengguna.
+          </p>
+          <ul class="about-list reveal">
+            <li><span class="list-arrow">→</span> Web Design profesional & modern</li>
+            <li><span class="list-arrow">→</span> UI/UX yang intuitif & user-friendly</li>
+            <li><span class="list-arrow">→</span> Responsif untuk semua perangkat</li>
+            <li><span class="list-arrow">→</span> Sesuai kebutuhan brand kamu</li>
+          </ul>
+          <a href="mailto:m85116437@gmail.com" class="btn btn-primary reveal" style="margin-top:2rem;display:inline-flex;">Hubungi Saya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills" aria-label="Skills">
+    <div class="container">
+      <div class="section-label reveal">// 02 — Skills</div>
+      <h2 class="section-heading reveal">Keahlian<br /><span class="gradient-text">Saya.</span></h2>
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-card-icon" aria-hidden="true">⬡</div>
+          <h3 class="skill-card-title">Design Tools</h3>
+          <ul class="skill-bars">
+            <li class="bar-item">
+              <div class="bar-meta"><span>Figma</span><span>92%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="92"></div></div>
+            </li>
+            <li class="bar-item">
+              <div class="bar-meta"><span>Adobe XD</span><span>85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+            </li>
+            <li class="bar-item">
+              <div class="bar-meta"><span>Photoshop</span><span>80%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+            </li>
+            <li class="bar-item">
+              <div class="bar-meta"><span>Illustrator</span><span>75%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+            </li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-card-icon" aria-hidden="true">◈</div>
+          <h3 class="skill-card-title">Web Development</h3>
+          <ul class="skill-bars">
+            <li class="bar-item">
+              <div class="bar-meta"><span>HTML & CSS</span><span>90%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+            </li>
+            <li class="bar-item">
+              <div class="bar-meta"><span>JavaScript</span><span>75%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+            </li>
+            <li class="bar-item">
+              <div class="bar-meta"><span>WordPress</span><span>85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+            </li>
+            <li class="bar-item">
+              <div class="bar-meta"><span>Webflow</span><span>78%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="78"></div></div>
+            </li>
+          </ul>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-card-icon" aria-hidden="true">⬢</div>
+          <h3 class="skill-card-title">UI/UX</h3>
+          <ul class="skill-bars">
+            <li class="bar-item">
+              <div class="bar-meta"><span>Wireframing</span><span>90%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+            </li>
+            <li class="bar-item">
+              <div class="bar-meta"><span>Prototyping</span><span>88%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+            </li>
+            <li class="bar-item">
+              <div class="bar-meta"><span>Branding</span><span>82%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="82"></div></div>
+            </li>
+            <li class="bar-item">
+              <div class="bar-meta"><span>User Research</span><span>78%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="78"></div></div>
+            </li>
+          </ul>
+        </article>
+      </div>
+      <div class="tech-tags reveal">
+        <span class="tag">Figma</span><span class="tag">Adobe XD</span>
+        <span class="tag">HTML</span><span class="tag">CSS</span>
+        <span class="tag">JavaScript</span><span class="tag">WordPress</span>
+        <span class="tag">Webflow</span><span class="tag">Photoshop</span>
+        <span class="tag">Illustrator</span><span class="tag">UI Design</span>
+        <span class="tag">UX Design</span><span class="tag">Branding</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects" aria-label="Projects">
+    <div class="container">
+      <div class="section-label reveal">// 03 — Projects</div>
+      <h2 class="section-heading reveal">Karya<br /><span class="gradient-text">Terbaru.</span></h2>
+      <div class="projects-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-img" aria-hidden="true">
+            <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0d1b2a"/><stop offset="100%" stop-color="#1a3252"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#g1)"/>
+              <rect x="40" y="40" width="560" height="280" rx="12" fill="#0f1e2f" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="40" y="40" width="560" height="50" rx="12" fill="#152840"/>
+              <circle cx="72" cy="65" r="8" fill="#ef4444" opacity=".7"/>
+              <circle cx="98" cy="65" r="8" fill="#f59e0b" opacity=".7"/>
+              <circle cx="124" cy="65" r="8" fill="#22c55e" opacity=".7"/>
+              <rect x="60" y="110" width="180" height="180" rx="8" fill="#1a3252"/>
+              <rect x="260" y="110" width="320" height="80" rx="6" fill="#152840"/>
+              <rect x="260" y="205" width="240" height="14" rx="3" fill="#1e3a5f"/>
+              <rect x="260" y="228" width="200" height="10" rx="3" fill="#152840"/>
+              <rect x="260" y="248" width="220" height="10" rx="3" fill="#152840"/>
+              <text x="110" y="210" font-family="monospace" font-size="32" fill="#3b82f6" text-anchor="middle" opacity=".4">GY</text>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Branding</span><span class="project-tag">UI Design</span><span class="project-tag">Figma</span>
+            </div>
+            <h3 class="project-title">Brand Identity — TokoBaju.id</h3>
+            <p class="project-desc">Desain identitas brand lengkap untuk toko fashion online, mencakup logo, color palette, tipografi, dan tampilan website yang modern dan elegan.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Lihat Project ↗</a>
+              <a href="#" class="project-link project-link-ghost">Detail →</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-img" aria-hidden="true">
+            <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+              <rect width="640" height="360" fill="#0a1628"/>
+              <rect x="0" y="0" width="220" height="360" fill="#0d1b2a"/>
+              <rect x="20" y="30" width="180" height="40" rx="6" fill="#1a3252"/>
+              <rect x="20" y="90" width="140" height="12" rx="3" fill="#152840"/>
+              <rect x="20" y="115" width="160" height="12" rx="3" fill="#1e3a5f"/>
+              <rect x="20" y="140" width="130" height="12" rx="3" fill="#152840"/>
+              <rect x="20" y="165" width="150" height="12" rx="3" fill="#152840"/>
+              <rect x="240" y="20" width="380" height="200" rx="8" fill="#111e2e" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="260" y="40" width="340" height="160" rx="6" fill="#0f1e2f"/>
+              <text x="440" y="130" font-family="monospace" font-size="48" fill="#3b82f6" text-anchor="middle" opacity=".15">UI</text>
+              <rect x="240" y="240" width="180" height="100" rx="8" fill="#111e2e" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="440" y="240" width="180" height="100" rx="8" fill="#111e2e" stroke="#1e3a5f" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Dashboard</span><span class="project-tag">UI/UX</span><span class="project-tag">Webflow</span>
+            </div>
+            <h3 class="project-title">Dashboard Admin — KlinikSehat</h3>
+            <p class="project-desc">Desain dashboard admin untuk sistem manajemen klinik. Fokus pada kemudahan penggunaan dan tampilan yang bersih dan profesional.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Lihat Project ↗</a>
+              <a href="#" class="project-link project-link-ghost">Detail →</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-img" aria-hidden="true">
+            <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+              <rect width="640" height="360" fill="#060d17"/>
+              <rect x="200" y="20" width="240" height="430" rx="24" fill="#0d1b2a" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="210" y="30" width="220" height="400" rx="18" fill="#111e2e"/>
+              <rect x="230" y="60" width="180" height="100" rx="8" fill="#1a3252"/>
+              <rect x="230" y="175" width="180" height="14" rx="3" fill="#1e3a5f"/>
+              <rect x="230" y="198" width="140" height="10" rx="3" fill="#152840"/>
+              <rect x="230" y="225" width="80" height="32" rx="6" fill="#3b82f6" opacity=".8"/>
+              <text x="270" y="246" font-family="monospace" font-size="11" fill="white">Order</text>
+              <rect x="230" y="270" width="180" height="1" fill="#1e3a5f"/>
+              <rect x="230" y="285" width="50" height="50" rx="6" fill="#152840"/>
+              <rect x="290" y="285" width="50" height="50" rx="6" fill="#152840"/>
+              <rect x="350" y="285" width="50" height="50" rx="6" fill="#152840"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Mobile UI</span><span class="project-tag">E-Commerce</span><span class="project-tag">Figma</span>
+            </div>
+            <h3 class="project-title">App Design — FoodOrder</h3>
+            <p class="project-desc">Desain UI mobile app pemesanan makanan dengan tampilan yang menarik, navigasi yang intuitif, dan pengalaman pengguna yang menyenangkan.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Lihat Project ↗</a>
+              <a href="#" class="project-link project-link-ghost">Detail →</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-img" aria-hidden="true">
+            <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+              <rect width="640" height="360" fill="#0d1b2a"/>
+              <rect x="40" y="30" width="560" height="300" rx="12" fill="#060d17"/>
+              <rect x="40" y="30" width="560" height="70" rx="12" fill="#0f1e2f"/>
+              <text x="320" y="75" font-family="sans-serif" font-size="28" font-weight="bold" fill="#e8edf2" text-anchor="middle" opacity=".9">GYLLENKAAL</text>
+              <rect x="80" y="130" width="220" height="160" rx="8" fill="#0f1e2f" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="340" y="130" width="220" height="70" rx="8" fill="#0f1e2f" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="340" y="215" width="100" height="70" rx="8" fill="#0f1e2f" stroke="#1e3a5f" stroke-width="1"/>
+              <rect x="460" y="215" width="100" height="70" rx="8" fill="#3b82f6" opacity=".2" stroke="#3b82f6" stroke-width="1"/>
+              <text x="190" y="220" font-family="sans-serif" font-size="14" fill="#7a8fa6" text-anchor="middle">Portfolio</text>
+              <text x="450" y="170" font-family="sans-serif" font-size="13" fill="#7a8fa6" text-anchor="middle">Web Design</text>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">Portfolio</span><span class="project-tag">HTML/CSS</span><span class="project-tag">Personal</span>
+            </div>
+            <h3 class="project-title">Portfolio Website — Personal</h3>
+            <p class="project-desc">Website portfolio pribadi yang kamu lihat sekarang ini! Dibangun dengan HTML, CSS, dan JavaScript murni tanpa framework.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Lihat Project ↗</a>
+              <a href="#" class="project-link project-link-ghost">Detail →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-label reveal">// 04 — Contact</div>
+      <h2 class="section-heading reveal">Ayo Kita<br /><span class="gradient-text">Berkolaborasi.</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="body-text reveal">Punya project website atau butuh desain UI/UX? Saya siap membantu mewujudkan ide kamu menjadi kenyataan.</p>
+          <ul class="contact-links reveal">
+            <li><a href="mailto:m85116437@gmail.com" class="contact-link"><span class="contact-icon" aria-hidden="true">✉</span>m85116437@gmail.com</a></li>
+            <li><a href="https://github.com/gyyllenkaal" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="contact-icon" aria-hidden="true">⌥</span>github.com/gyyllenkaal</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="contact-icon" aria-hidden="true">◈</span>@gyllenkaal</a></li>
+          </ul>
+          <div class="availability reveal">
+            <span class="avail-dot" aria-hidden="true"></span>
+            Tersedia untuk project freelance
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Nama kamu" autocomplete="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@kamu.com" autocomplete="email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subjek</label>
+              <input type="text" id="subject" name="subject" placeholder="Jenis project, kolaborasi…" />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ceritakan project kamu…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              Kirim Pesan <span class="btn-arrow">→</span>
+            </button>
+            <p class="form-success" id="formSuccess" role="alert" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <span class="nav-logo">GY<span class="dot">.</span></span>
+      <p class="footer-copy">© 2026 Gyllenkaal. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/gyyllenkaal" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
